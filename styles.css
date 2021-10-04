@@ -6,6 +6,11 @@ img {
 	height: auto;
 }
 
+.jazzmaster {
+	grid-column: 1/-1;
+	text-align: center;
+	margin: auto;
+}
 @media screen and (min-width: 600px) {
 	main {
 		display: grid;
@@ -19,7 +24,13 @@ img {
 	main {
 		display: grid;
 		grid-gap: 1rem;
-		grid-template-columns: repeat(3,1fr );
+		grid-template-columns: repeat(6,1fr );
+	}
+	main article {
+		grid-column: span 2;
+	}
+	main article:nth-of-type(4) {
+		grid-column: 2 / span 4;
 	}
 }
 
@@ -28,5 +39,11 @@ img {
 		display: grid;
 		grid-gap: 1rem;
 		grid-template-columns: repeat(4,1fr );
+	}
+	main article {
+		grid-column: unset;
+	}
+	main article:nth-of-type(4) {
+		grid-column: unset;
 	}
 }
