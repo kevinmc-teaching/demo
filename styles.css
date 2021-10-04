@@ -1,3 +1,31 @@
 body {
-	background-color: hotpink;
+	background-color:hsl(120, 50%, 95%);
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 600px) {
+	main {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(2,1fr );
+	}
+}
+
+@media screen and (min-width: 900px) {
+	main {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(3,1fr );
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	main {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(4,1fr );
+	}
 }
